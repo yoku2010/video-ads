@@ -77,7 +77,7 @@ h1.title {
 }
 
 .wrapper {
-  width: 675px;
+  width: 680px;
   margin: 0 auto;
 }
 
@@ -151,8 +151,8 @@ p.tagline {
   height: 0;
   display: block;
   position: absolute;
-  top: -15px;
-  right: 0;
+  top: -14px;
+  right: -1px;
   -moz-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
@@ -286,6 +286,30 @@ a.download-button {
   background: -moz-linear-gradient(top,  #37ADD4,  #1B657E); /* for firefox 3.6+ */
   height: auto;
   margin-left: 10px;
+}
+
+a.start-button {
+  border: 1px solid black;
+  border-radius: 3px;
+  display: inline-block;
+  text-indent: 0!important;
+  width: auto;
+  float: right;
+  background: #999; /* for non-css3 browsers */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#37ADD4', endColorstr='#1B657E'); /* for IE */
+  background: -webkit-gradient(linear, left top, left bottom, from(#37ADD4), to(#1B657E)); /* for webkit browsers */
+  background: -moz-linear-gradient(top,  #37ADD4,  #1B657E); /* for firefox 3.6+ */
+  height: auto;
+}
+
+a.start-button span {
+  background-position: 10px 5px;
+  width: auto;
+  height: auto;
+  padding: 5px 10px;
+  display: inline-block;
+  text-indent: 0!important;
+  color: #fff;
 }
 
 a.download-button span {
@@ -579,3 +603,52 @@ footer .owner p a {
 .highlight .vg { color: #008080 } /* Name.Variable.Global */
 .highlight .vi { color: #008080 } /* Name.Variable.Instance */
 .highlight .il { color: #009999 } /* Literal.Number.Integer.Long */
+
+
+.option {
+    display:block;
+    padding: 10px 0px;
+    overflow:hidden;
+    font-size:12px;
+}
+.option p {
+    display:block;
+    clear:both;
+    padding: 5px;
+    overflow:hidden;
+}
+.option p label {
+    display:block;
+    width: 140px;
+    float:left;
+}
+.option p input {
+    float:left;
+}
+label.main-label {
+    font-weight:bold;
+}
+.video-div {
+    min-height:300px;
+}
+.error {
+    color:red;
+    font-size: 13px;
+    font-weight: bold;
+    display: inline-block !important;
+    padding: 6px 7px;
+}
+.success {
+    color:#63A52A;
+    font-size: 13px;
+    font-weight: bold;
+    display: inline-block !important;
+    padding: 6px 7px;
+}
+.info {
+    color:#DABF21;
+    font-size: 13px;
+    font-weight: bold;
+    display: inline-block !important;
+    padding: 6px 7px;
+}
