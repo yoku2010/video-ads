@@ -68,7 +68,6 @@ $(document).ready(function(){
   }
   $("#scheduled_video").click(function(e){
     e.preventDefault();
-    
     // validation
     if ("" == $videoFile.val()) {
         showMsg("Please Select Video File to play", "error");
@@ -112,6 +111,7 @@ $(document).ready(function(){
     // destroy video player
     if (void 0 != videoPlayer) {
         videoPlayer.destroy();
+        videoPlayer = null;
     }
     $videoDiv.css("visibility","hidden");
     
